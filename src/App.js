@@ -80,7 +80,7 @@ const styles = theme => ({
     ]: {
       width: drawerWidth,
       position: 'relative',
-      height: '100%'
+      height: '100vh'
     }
   },
   content: {

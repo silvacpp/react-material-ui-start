@@ -5,8 +5,10 @@ import * as drawerActions from './actions';
 import Drawer from 'material-ui/Drawer';
 import Divider from 'material-ui/Divider';
 import Hidden from 'material-ui/Hidden';
-
+import List from 'material-ui/List';
 import CustomDrawerHeader from './CustomDrawerHeader';
+import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+
 
 class CustomDrawer extends React.Component {
 
@@ -16,6 +18,9 @@ class CustomDrawer extends React.Component {
             <div>
                 <CustomDrawerHeader parentClasses={classes}/>
                 <Divider/>
+                <List>{mailFolderListItems}</List>
+                <Divider />
+                <List>{otherMailFolderListItems}</List>
             </div>
         );
 
