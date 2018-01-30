@@ -10,12 +10,14 @@ import ReportIcon from 'material-ui-icons/Report';
 
 export const mailFolderListItems = (
   <div>
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon />
-      </ListItemIcon>
-      <ListItemText primary="Novo gasto" />
-    </ListItem>
+    <a href="/ola">
+      <ListItem button>
+        <ListItemIcon>
+          <InboxIcon />
+        </ListItemIcon>
+        <ListItemText primary="Novo gasto" />
+      </ListItem>
+    </a>
     <ListItem button>
       <ListItemIcon>
         <StarIcon />

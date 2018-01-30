@@ -7,6 +7,7 @@ export default props => (
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={Home}/>
+            <Route exact path='/ola' component={Home} />
             <Redirect from='*' to='/'/>
         </Switch>
     </BrowserRouter>
