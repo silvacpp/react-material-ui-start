@@ -2,22 +2,22 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-class Chargebacks extends React.Component {
+class Expense extends React.Component {
 
     render() {
         return (
-            <div className="Chargebacks">Olá, estou na Chargebacks</div>
+           <div className="expense">Olá, estou na Expense</div> 
         );
     }
 }
 
-Chargebacks.defaultProps = {
-
+Expense.defaultProps = {
+    
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-
+        
     };
 }
 
@@ -27,4 +27,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Chargebacks);
+export default connect(mapStateToProps, mapDispatchToProps)(Expense);

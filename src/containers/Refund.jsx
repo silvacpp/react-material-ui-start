@@ -2,22 +2,22 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-class Expensive extends React.Component {
+class Refund extends React.Component {
 
     render() {
         return (
-           <div className="expensive">Olá, estou na expensive</div> 
+            <div className="Refund">Olá, estou na Refund</div>
         );
     }
 }
 
-Expensive.defaultProps = {
-    
+Refund.defaultProps = {
+
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        
+
     };
 }
 
@@ -27,4 +27,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Expensive);
+export default connect(mapStateToProps, mapDispatchToProps)(Refund);
