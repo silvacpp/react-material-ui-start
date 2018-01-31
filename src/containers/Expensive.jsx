@@ -1,18 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as homeActions from './Actions';
 
-class Home extends React.Component {
+class Expensive extends React.Component {
 
     render() {
         return (
-           <div className="home">Olá, estou na home</div> 
+           <div className="expensive">Olá, estou na expensive</div> 
         );
     }
 }
 
-Home.defaultProps = {
+Expensive.defaultProps = {
     
 };
 
@@ -24,8 +23,8 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(homeActions, dispatch),
+        // actions: bindActionCreators(homeActions, dispatch),
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Expensive);

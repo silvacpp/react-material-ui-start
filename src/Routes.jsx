@@ -1,13 +1,14 @@
 import React from 'react'
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 
-import Home from './home/Home';
+import Expensive from './containers/Expensive';
+import Chargebacks from './containers/Chargebacks';
 
 export default props => (
     <BrowserRouter>
         <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route exact path='/ola' component={Home} />
+            <Route exact path='/' component={Expensive}/>
+            <Route exact path='/chargebacks' component={Chargebacks} />
             <Redirect from='*' to='/'/>
         </Switch>
     </BrowserRouter>

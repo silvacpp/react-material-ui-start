@@ -6,7 +6,7 @@ import ReportIcon from 'material-ui-icons/Report';
 
 export const mailFolderListItems = (
   <div>
-    <a href="/ola">
+    <a href="/">
       <ListItem button>
         <ListItemIcon>
           <InboxIcon />
@@ -14,12 +14,14 @@ export const mailFolderListItems = (
         <ListItemText primary="Novo gasto" />
       </ListItem>
     </a>
+    <a href="/chargebacks">
     <ListItem button>
       <ListItemIcon>
         <StarIcon />
       </ListItemIcon>
       <ListItemText primary="Lista de gastos" />
     </ListItem>
+    </a>
   </div>
 );
 
